@@ -11,6 +11,20 @@
     },
     "items": [
         {
+            "id": "https://www.1stand7thfromescouts.org.uk/hobbies.html",
+            "url": "https://www.1stand7thfromescouts.org.uk/hobbies.html",
+            "title": "Hobbies",
+            "summary": "During the long winter months we decided to take a look at our Hobbies. We had some really interesting talks,&hellip;",
+            "content_html": "<p>During the long winter months we decided to take a look at our Hobbies. We had some really interesting talks, ranging from Martial arts, to Mushrooms and Music. </p>\n<div class=\"gallery-wrapper\"><div class=\"gallery\"  data-is-empty=\"false\" data-translation=\"Add images\" data-columns=\"3\">\n<figure class=\"gallery__item\"><a href=\"https://www.1stand7thfromescouts.org.uk/media/posts/19/gallery/PXL_20250130_190949820.MP.jpg\" data-size=\"3072x4080\"><img loading=\"lazy\" src=\"https://www.1stand7thfromescouts.org.uk/media/posts/19/gallery/PXL_20250130_190949820.MP-thumbnail.jpg\" alt=\"\" width=\"768\" height=\"1020\"></a></figure>\n<figure class=\"gallery__item\"><a href=\"https://www.1stand7thfromescouts.org.uk/media/posts/19/gallery/PXL_20250130_190953735.MP.jpg\" data-size=\"3072x4080\"><img loading=\"lazy\" src=\"https://www.1stand7thfromescouts.org.uk/media/posts/19/gallery/PXL_20250130_190953735.MP-thumbnail.jpg\" alt=\"\" width=\"768\" height=\"1020\"></a></figure>\n<figure class=\"gallery__item\"><a href=\"https://www.1stand7thfromescouts.org.uk/media/posts/19/gallery/PXL_20250130_190959528.MP.jpg\" data-size=\"3072x4080\"><img loading=\"lazy\" src=\"https://www.1stand7thfromescouts.org.uk/media/posts/19/gallery/PXL_20250130_190959528.MP-thumbnail.jpg\" alt=\"\" width=\"768\" height=\"1020\"></a></figure>\n<figure class=\"gallery__item\"><a href=\"https://www.1stand7thfromescouts.org.uk/media/posts/19/gallery/PXL_20250130_191632496.MP.jpg\" data-size=\"3072x4080\"><img loading=\"lazy\" src=\"https://www.1stand7thfromescouts.org.uk/media/posts/19/gallery/PXL_20250130_191632496.MP-thumbnail.jpg\" alt=\"\" width=\"768\" height=\"1020\"></a></figure>\n</div></div>",
+            "author": {
+                "name": "GSL"
+            },
+            "tags": [
+            ],
+            "date_published": "2025-05-06T15:37:58+01:00",
+            "date_modified": "2025-05-06T15:37:58+01:00"
+        },
+        {
             "id": "https://www.1stand7thfromescouts.org.uk/remembrance-sunday.html",
             "url": "https://www.1stand7thfromescouts.org.uk/remembrance-sunday.html",
             "title": "Remembrance Sunday",
