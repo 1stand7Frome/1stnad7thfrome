@@ -3,7 +3,7 @@
     <title>1st and 7th Scout Group</title>
     <link href="https://www.1stand7thfromescouts.org.uk/feed.xml" rel="self" />
     <link href="https://www.1stand7thfromescouts.org.uk" />
-    <updated>2025-05-06T15:37:58+01:00</updated>
+    <updated>2025-05-06T15:39:32+01:00</updated>
     <author>
         <name>GSL</name>
     </author>
@@ -16,6 +16,7 @@
         </author>
         <link href="https://www.1stand7thfromescouts.org.uk/hobbies.html"/>
         <id>https://www.1stand7thfromescouts.org.uk/hobbies.html</id>
+            <category term="Cubs"/>
 
         <updated>2025-05-06T15:37:58+01:00</updated>
             <summary>
