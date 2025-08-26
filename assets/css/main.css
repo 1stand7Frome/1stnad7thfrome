@@ -1191,7 +1191,6 @@ textarea {
   border-bottom: none !important;
   margin-top: 2.4285714286rem;
   padding-top: 1.9428571429rem;
-  padding-bottom: 0 !important;
 }
 .sidebar .box:first-child {
   border-top: none;
@@ -1216,6 +1215,9 @@ textarea {
 }
 .box ul {
   margin: 0;
+}
+.box.u-ads {
+  padding-bottom: 0;
 }
 
 .featured__container,
@@ -1574,6 +1576,7 @@ textarea {
   }
 }
 .infobar__search {
+  margin-left: auto;
   position: relative;
 }
 
