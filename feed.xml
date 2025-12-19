@@ -3,7 +3,7 @@
     <title>1st and 7th Scout Group</title>
     <link href="https://www.1stand7thfromescouts.org.uk/feed.xml" rel="self" />
     <link href="https://www.1stand7thfromescouts.org.uk" />
-    <updated>2025-12-19T11:31:27+00:00</updated>
+    <updated>2025-12-19T17:19:25+00:00</updated>
     <author>
         <name>GSL</name>
     </author>
@@ -44,6 +44,7 @@
         <link href="https://www.1stand7thfromescouts.org.uk/remembrance-sunday-2025/"/>
         <id>https://www.1stand7thfromescouts.org.uk/remembrance-sunday-2025/</id>
         <media:content url="https://www.1stand7thfromescouts.org.uk/media/posts/27/PXL_20251109_104127023.MP.jpg" medium="image" />
+            <category term="Group"/>
 
         <updated>2025-12-14T11:50:16+00:00</updated>
             <summary type="html">
