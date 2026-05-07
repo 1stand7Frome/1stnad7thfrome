@@ -3,7 +3,7 @@
     <title>1st and 7th Scout Group</title>
     <link href="https://www.1stand7thfromescouts.org.uk/feed.xml" rel="self" />
     <link href="https://www.1stand7thfromescouts.org.uk" />
-    <updated>2026-05-07T12:10:46+01:00</updated>
+    <updated>2026-05-07T12:12:30+01:00</updated>
     <author>
         <name>GSL</name>
     </author>
@@ -16,16 +16,19 @@
         </author>
         <link href="https://www.1stand7thfromescouts.org.uk/get-out-and-about/"/>
         <id>https://www.1stand7thfromescouts.org.uk/get-out-and-about/</id>
+        <media:content url="https://www.1stand7thfromescouts.org.uk/media/posts/29/PXL_20260423_180343855.jpg" medium="image" />
             <category term="Cubs"/>
 
         <updated>2026-05-07T12:10:46+01:00</updated>
             <summary type="html">
                 <![CDATA[
+                        <img src="https://www.1stand7thfromescouts.org.uk/media/posts/29/PXL_20260423_180343855.jpg" alt="" />
                     As part of our local impact mappers badges we go out and about in Frome. This is designed to highlight&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
+                    <p><img src="https://www.1stand7thfromescouts.org.uk/media/posts/29/PXL_20260423_180343855.jpg" class="type:primaryImage" alt="" /></p>
                 <p>As part of our local impact mappers badges we go out and about in Frome. This is designed to highlight where local services are design to help people that may need it. Be that some space to just sit and think or something practicle like the communit fridge. </p>
 <p> </p>
 <div class="gallery-wrapper"><div class="gallery" data-is-empty="false" data-translation="Add images" data-columns="3">
