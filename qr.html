@@ -44,7 +44,7 @@
             <div class="hidden sm:flex items-center space-x-4 text-sm font-medium">
                 <span class="bg-purple-700/50 px-3 py-1 rounded-full text-purple-100 flex items-center gap-1.5">
                     <span class="h-2 w-2 rounded-full bg-purple-300 animate-pulse"></span>
-                    Active Generator
+                    Live Generator Connected
                 </span>
             </div>
         </div>
@@ -68,7 +68,7 @@
                 <div class="space-y-2">
                     <label class="block text-sm font-semibold text-slate-700 flex items-center justify-between">
                         <span>1. Destination Link / URL</span>
-                        <span class="text-xs text-slate-400 font-normal">Where the code points to</span>
+                        <span class="text-xs text-purple-800 font-bold">Try typing a new URL to watch it update!</span>
                     </label>
                     <div class="relative rounded-md shadow-sm">
                         <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
@@ -298,7 +298,7 @@
         let selectedLogo = "scout"; 
         let customLogoUrl = "";
 
-        // Instantiating the QRCodeStyling instance
+        // Instantiating the QRCodeStyling instance once on startup
         let qrCode;
 
         // Function to dynamically build the brand-aligned Fleur-de-lis SVG with matching color themes
@@ -307,14 +307,22 @@
             return 'data:image/svg+xml;base64,' + btoa(svg);
         }
 
+        // Initialize empty QR Code styling object linked directly to container
+        const previewDiv = document.getElementById('qr-preview-canvas');
+        qrCode = new QRCodeStyling({
+            width: 232,
+            height: 232,
+            type: "svg"
+        });
+        qrCode.append(previewDiv);
+
         function updateQR() {
-            const url = urlInput.value || "https://www.1stand7thfromescouts.org.uk";
+            const url = urlInput.value.trim() || "https://www.1stand7thfromescouts.org.uk";
             const foreColor = colorFore.value;
             const backColor = colorBack.value;
-            const sizeValue = parseInt(resolutionInput.value);
 
             // Determine logo configurations
-            let logoImage = null;
+            let logoImage = "";
             let logoSize = 0.35; // Size preset for QR code brand recognition
             
             if (selectedLogo === 'scout') {
@@ -334,10 +342,8 @@
             if (cornersStyle.value === "square") cornerSquaresType = "square";
             if (cornersStyle.value === "dot") cornerSquaresType = "dot";
 
-            const config = {
-                width: sizeValue,
-                height: sizeValue,
-                type: "svg",
+            // Update configuration dynamically using the library's official update pattern
+            qrCode.update({
                 data: url,
                 image: logoImage,
                 dotsOptions: {
@@ -362,18 +368,9 @@
                     color: foreColor
                 },
                 qrOptions: {
-                    errorCorrectionLevel: 'H' // High error correction protects scanability even with the center logo mask
+                    errorCorrectionLevel: 'H' // High error correction protects scanability
                 }
-            };
-
-            // Re-render
-            const previewDiv = document.getElementById('qr-preview-canvas');
-            previewDiv.innerHTML = "";
-            
-            // Scaled down configuration for real-time preview canvas layout compatibility
-            const displayConfig = { ...config, width: 232, height: 232 };
-            qrCode = new QRCodeStyling(displayConfig);
-            qrCode.append(previewDiv);
+            });
         }
 
         // Preset selector system
@@ -401,13 +398,20 @@
             updateQR();
         }
 
-        // Listen for standard updates
+        // Setup unified inputs listener
         [urlInput, colorFore, colorBack, dotsStyle, cornersStyle].forEach(el => {
             el.addEventListener('input', () => {
                 colorForeHex.value = colorFore.value;
                 colorBackHex.value = colorBack.value;
                 updateQR();
             });
+            el.addEventListener('change', updateQR);
+        });
+
+        // Keyup and Paste listeners on URL field for rapid real-time performance
+        urlInput.addEventListener('keyup', updateQR);
+        urlInput.addEventListener('paste', () => {
+            setTimeout(updateQR, 10); // Tiny timeout ensures the text gets pasted first
         });
 
         // Hex inputs manual editing
